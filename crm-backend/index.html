@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <title>Cursovik</title>
+</head>
+<script>
+
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+
+</script>
+<body class="body">
+  <div class="preloader">
+    <svg class="preloader__image" width="80" height="80" viewBox="0 0 80 80" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" >
+      <path
+ d="M4.00025 40.0005C4.00025 59.8825 20.1182 76.0005 40.0002 76.0005C59.8822 76.0005 76.0002 59.8825 76.0002 40.0005C76.0002 20.1185 59.8823 4.00049 40.0003 4.00049C35.3513 4.00048 30.9082 4.88148 26.8282 6.48648" stroke="#9873FF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <main>
+
+    <section class="hero">
+      <div class="hero__container">
+
+        <div class="hero__header">
+          <picture>
+            <img class="hero__logo" src="./img/Logo1366.svg" alt="Логотип SKB.">
+          </picture>
+          <form action="#">
+            <input class="hero__input" type="search" placeholder="Введите запрос">
+          </form>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__h1"> Клиенты </h1>
+
+          <div class="grid">
+          </div>
+
+          <button class="hero__button" type="button" id="heroClientButton">
+            <svg class="hero__svg" width="23" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+                fill="#9873FF" />
+            </svg>
+            Добавить клиента
+          </button>
+
+          <!--hero__content  -->
+        </div>
+
+        <!-- Модальное окно -->
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="./js/start.js"></script>
+  <script src="./js/checkFIO.js"></script>
+  <script src="./js/async.js"></script>
+  <script src="./js/modalWindow.js"></script>
+  <script src="./js/actions.js"></script>
+  <script src="./js/Contacts.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="./js/inputmask.min.js"></script>
+
+
+</body>
+
+</html>
